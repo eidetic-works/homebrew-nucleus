@@ -1,20 +1,20 @@
 class Eideticd < Formula
   desc "Always-on memory daemon for AI workflows — captures Claude Code, Cursor, and Cowork sessions to local SQLite"
   homepage "https://eidetic.works"
-  version "0.0.25"
+  version "0.0.26"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.25/eideticd-darwin-arm64.tar.gz"
-      sha256 "deb04e44af28460e38ed679f8465c5b48f31ff78a72d18847f835399dbcea5aa"
+      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.26/eideticd-darwin-arm64.tar.gz"
+      sha256 "972aac35967098ebf02254ddd42351725465b7765e669284e131cfb5897cc638"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.25/eideticd-linux-amd64.tar.gz"
-      sha256 "9726361c14a5beaa30a3f823634be075090b41c4a3d5dad5c3d3cdcacf6b58bd"
+      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.26/eideticd-linux-amd64.tar.gz"
+      sha256 "56c9abb2b4eb2e5a293daa490cf8936a47da8c8a72c09063238efabc3eaf3080"
     end
   end
 
@@ -33,6 +33,9 @@ class Eideticd < Formula
 
       Check it's running:
         curl --unix-socket /tmp/eidetic-daemon.sock http://localhost/healthz
+
+      Show your engram stats:
+        eideticd -stats
 
       MCP bridge for Claude Code / Cursor:
         pip install eidetic-mcp
