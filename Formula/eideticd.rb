@@ -1,24 +1,24 @@
 class Eideticd < Formula
   desc "Always-on memory daemon for AI workflows — captures Claude Code, Cursor, and Cowork sessions to local SQLite"
   homepage "https://eidetic.works"
-  version "0.0.55"
+  version "0.0.56"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.55/eideticd-darwin-arm64.tar.gz"
-      sha256 "94637bc89b40c7186b941952e4d90008d92d6b5e512a5e1bfaa810c6f2a125e0"
+      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.56/eideticd-darwin-arm64.tar.gz"
+      sha256 "e58a1642d4f64ea3b3d34303d7666b2bd2530fb730d9c6c535a95f50b424d19f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.55/eideticd-linux-amd64.tar.gz"
-      sha256 "4089ee941342e023ecfda12c61d78075412ee9f668e6e1b711c387d66b21ddc2"
+      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.56/eideticd-linux-amd64.tar.gz"
+      sha256 "78855a9a31ca149fcbc773a18925a95f5623a529c63afc926f540daf249359eb"
     end
     on_arm do
-      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.55/eideticd-linux-arm64.tar.gz"
-      sha256 "facd25a0c6f0b0d15725d2c632cbd517c5360da13e29d80a94deff16f95d12d4"
+      url "https://github.com/eidetic-works/eidetic-daemon/releases/download/v0.0.56/eideticd-linux-arm64.tar.gz"
+      sha256 "fc6d4cf8bd40593b458cf224c974646c1e33dd3efed185c86256d9d83b959fd5"
     end
   end
 
